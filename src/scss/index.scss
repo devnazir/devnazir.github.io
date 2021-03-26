@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    .container {
+        max-width: 1440px;
+        width: 80%;
+        margin: auto;
+    }
+
+    &.night {
+        background-color: #171c28;
+        color: white;
+
+        nav {
+            background-color: white;
+            a {
+                color: #171c28;
+            }
+        }
+
+        header {
+            .link-email {
+                color: white;
+
+                &::after {
+                    border-bottom: 2px solid #bae67e;
+                }
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+}
