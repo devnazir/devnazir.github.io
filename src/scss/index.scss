@@ -17,8 +17,23 @@ body {
 
         nav {
             background-color: white;
+
+            .hamburger {
+                span {
+                    background-color: #171c28;
+                }
+            }
             a {
                 color: #171c28;
+            }
+
+            ul.show-list {
+                background-color: white;
+                li {
+                    a {
+                        color: #171c28;
+                    }
+                }
             }
         }
 

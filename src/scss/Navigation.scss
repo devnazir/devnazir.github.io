@@ -8,7 +8,29 @@ nav {
     font-family: 'Poppins', sans-serif;
     background-color: #171c28;
     align-items: center;
-    
+    z-index: 9999;
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        height: 20px;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 1;
+
+        span {
+            width: 25px;
+            height: 2px;
+            background-color: white;
+        }
+
+        @media (max-width:576px) {
+            & {
+                display: flex;
+            }
+        }
+    }
+
     ul {
         width: 80%;
         display: flex;
@@ -25,6 +47,35 @@ nav {
 
         li + li {
             margin-left: 2rem;
+        }
+
+        &.show-list {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #171c28;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+            li {
+                margin-left: 0;
+                margin-top: 1rem;
+                a {
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        @media (max-width:576px) {
+            & {
+                display: none;
+            }
         }
     }
 
@@ -68,6 +119,19 @@ nav {
             .nigth {
                 right: 0;
             }
+        }
+
+        @media (max-width:576px) {
+            & {
+                left: 1.25rem;
+            }
+        }
+    }
+
+    @media (max-width:576px) {
+        & {
+            padding: 1.25rem;
+            justify-content: flex-end;
         }
     }
 }

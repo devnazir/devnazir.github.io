@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navigation from './Navigation'
 import Projects from './Projects'
 import About from './About'
-import ErrorPage from './ErrorPage';
 
 function App() {
   return (
@@ -22,10 +21,6 @@ function App() {
 
           <Route path='/about'>
             <About />
-          </Route>
-
-          <Route path='*'>
-            <ErrorPage/>
           </Route>
         </Switch>
       </Router>
