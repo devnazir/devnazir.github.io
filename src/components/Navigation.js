@@ -13,7 +13,7 @@ function Navigation() {
             <Hamburger ulRef={ulRef} />
             <ul ref={ulRef}>
                 <li onClick={hiddenList}><Link to='/'>Homepage</Link></li>
-                <li onClick={hiddenList}><Link to='/projects'>Project</Link></li>
+                <li onClick={hiddenList}><Link to='/projects'>Projects</Link></li>
                 <li onClick={hiddenList}><Link to='/about'>About Me</Link></li>
             </ul>
             <ChangeMode />

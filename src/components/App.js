@@ -2,28 +2,40 @@ import '../scss/App.scss'
 import Header from './Header'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navigation from './Navigation'
-import Projects from './Projects'
-import About from './About'
+import { lazy, Suspense } from 'react'
+
+const Projects = lazy(() => import('./Projects'))
+const About = lazy(() => import('./About'))
 
 function App() {
   return (
     <div className='container'>
       <Router>
         <Navigation />
-        <Switch>
-          <Route exact path='/'>
-            <Header />
-          </Route>
+        <Suspense fallback={<Loading />}>
+          <Switch>
+            <Route exact path='/'>
+              <Header />
+            </Route>
 
-          <Route path='/projects'>
-            <Projects />
-          </Route>
+            <Route path='/projects'>
+              <Projects />
+            </Route>
 
-          <Route path='/about'>
-            <About />
-          </Route>
-        </Switch>
+            <Route path='/about'>
+              <About />
+            </Route>
+          </Switch>
+        </Suspense>
       </Router>
+    </div>
+  )
+}
+
+function Loading() {
+  return (
+    <div className='loading'>
+      <span>Loading...</span>
     </div>
   )
 }

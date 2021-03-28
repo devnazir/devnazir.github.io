@@ -1,0 +1,14 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins';
+    height: 100vh;
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    p + p {
+        margin-top: 1rem;
+    }
+}
