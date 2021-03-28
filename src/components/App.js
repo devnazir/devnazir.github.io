@@ -2,17 +2,14 @@ import '../scss/App.scss'
 import Header from './Header'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navigation from './Navigation'
-import { lazy, Suspense } from 'react'
-
-const Projects = lazy(() => import('./Projects'))
-const About = lazy(() => import('./About'))
+import Projects from './Projects'
+import About from './About'
 
 function App() {
   return (
     <div className='container'>
       <Router>
         <Navigation />
-        <Suspense fallback={<Loading />}>
           <Switch>
             <Route exact path='/'>
               <Header />
@@ -26,16 +23,7 @@ function App() {
               <About />
             </Route>
           </Switch>
-        </Suspense>
       </Router>
-    </div>
-  )
-}
-
-function Loading() {
-  return (
-    <div className='loading'>
-      <span>Loading...</span>
     </div>
   )
 }
