@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Youtube Downloader",
+        "desc": "Sebuah website untuk mendownload sebuah video dengan format yang dipilih, ada dua pilihan yaitu mp3 dan mp4. website ini dibuat menggunakan Express dan untuk styling nya menggunakan SASS/SCSS",
+        "source": "https://github.com/devnazir/yt-downloader",
+        "demo": "https://app-yt-downloader.herokuapp.com/"
+    },
+    {
+        "title": "NMOV",
+        "desc": "Sebuah Website untuk menonton film dan juga trailer, API dibuat oleh saya menggunakan Express (Hasil scrapping web filmapik). Website ini dibuat menggunakan Vanilla JavaScript dan juga Webpack. Perlu diketahui, web ini sangat lambat karena API yang saya buat terlalu banyak request video ke server.",
+        "source": "https://github.com/devnazir/nmov",
+        "demo": "https://devnazir.github.io/nmov/"
+    },
+    {
+        "title": "API LK21",
+        "desc": "Sebuah REST Server, dengan API ini akan mendapatkan data-data movie dari web lk21",
+        "source": "https://github.com/devnazir/api-lk21",
+        "demo": "https://api-lk21.herokuapp.com/newupload"
+    },
+    {
+        "title": "API FILMAPIK",
+        "desc": "Sebuah REST Server, dengan API ini akan mendapatkan data-data movie dari web filmapik beserta link google drive",
+        "source": "https://github.com/devnazir/api-filmapik",
+        "demo": "https://api-filmapik.herokuapp.com/search?q=avenger"
+    },
+    {
+        "title": "Movie Trailer",
+        "desc": "Sebuah website untuk menampilkan data-data movie, ini hampir sama dengan project NMOV. bedanya Website ini tidak dapat menonton film, hanya trailer saja.",
+        "source": "https://github.com/devnazir/movietrailer",
+        "demo": "https://devnazir.github.io/movietrailer/"
+    },
+    {
+        "title": "Mainan",
+        "desc": "Sebuah landing page yang dibuat menggunakan SASS dan SCSS",
+        "source": "https://github.com/devnazir/mainan",
+        "demo": "https://devnazir.github.io/mainan/"
+    },
+    {
+        "title": "Kelas.io",
+        "desc": "Sebuah landing page kelas online yang dibuat menggunakan Native CSS dan sedikit JavaScript",
+        "source": "https://github.com/devnazir/kelas-io",
+        "demo": " https://devnazir.github.io/kelas-io/"
+    }
+]

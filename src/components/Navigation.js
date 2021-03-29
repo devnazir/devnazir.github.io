@@ -14,6 +14,7 @@ function Navigation() {
             <ul ref={ulRef}>
                 <li onClick={hiddenList}><Link to='/'>Homepage</Link></li>
                 <li onClick={hiddenList}><Link to='/projects'>Projects</Link></li>
+                <li onClick={hiddenList}><Link to='/skills'>Skills</Link></li>
                 <li onClick={hiddenList}><Link to='/about'>About Me</Link></li>
             </ul>
             <ChangeMode />
