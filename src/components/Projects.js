@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from "react"
 import '../scss/Projects.scss'
 
 function Projects() {
+    console.log("project rendered")
     const [projects, setProjects] = useState([])
 
     useEffect(() => {
@@ -9,7 +10,6 @@ function Projects() {
             const dataProjects = await (await fetch('./projects.json')).json()
             setProjects(dataProjects)
         }
-
         fetchDataProjects()
     }, [])
 
@@ -32,6 +32,7 @@ function Projects() {
 }
 
 function Cards({ data }) {
+    console.log("cards rendered")
     return (
         <div className='card'>
             <h3 className='title'>{data.title}</h3>
